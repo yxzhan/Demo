@@ -1,0 +1,24 @@
+{
+	"groups":[
+	{
+		"keys":"animate_png,animate_json,123_json",
+		"name":"preload"
+	}],
+	"resources":[
+	{
+		"name":"123_json",
+		"subkeys":"game-spriteball,game-lefteye,game-intro,start-button,game-tree,start-title,tail,game-movetrees_r,game-movetrees,game-bg,game-energycube,game-overmovie",
+		"type":"sheet",
+		"url":"assets/123.json"
+	},
+	{
+		"name":"animate_json",
+		"type":"json",
+		"url":"assets/animate.json"
+	},
+	{
+		"name":"animate_png",
+		"type":"image",
+		"url":"assets/animate.png"
+	}]
+}
