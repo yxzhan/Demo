@@ -173,10 +173,11 @@
 
 <script type="text/template" id="sendConfirmTpl">
     <div id="sendConfirm" class="dialog" style="display: none;">
-        <span class="phone"></span>
-        <div class="bottom">
-            <button ontouchend="sendConfirm.hide()" class="replay"></button>
-            <button ontouchend="sendConfirm.sendInfo()" class="share"></button>
+        <h4 class="title">提示</h4>
+        <div class="content">您的手机号<span class="phone"></span><br>是领取优惠券的唯一凭证，请确认!</div>
+        <div class="footer">
+            <button ontouchend="sendConfirm.sendInfo()" class="confirm">确认</button>
+            <button ontouchend="sendConfirm.hide()" class="cancel">重填</button>
         </div>
     </div>
 </script>
