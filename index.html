@@ -11,6 +11,8 @@
     <meta name="x5-fullscreen" content="true"/>
     <meta name="360-fullscreen" content="true"/>
     <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+    <!--style.css把图片打包成base64,style-img.css直接用图片url-->
+    <!--<link rel="stylesheet" href="launcher/style-img.css">-->
     <link rel="stylesheet" href="launcher/style.css">
     <style>
         body {
@@ -147,7 +149,7 @@
         </div>
         <span class="money"></span>
         <div class="footer">
-            <button ontouchend="getCoupon.showConfirm()" class="fetch"></button>
+            <button ontouchstart="getCoupon.showConfirm()" class="fetch"></button>
         </div>
         <div class="bottom">
             <button ontouchend="getCoupon.restart()" class="replay"></button>
@@ -173,11 +175,10 @@
 
 <script type="text/template" id="sendConfirmTpl">
     <div id="sendConfirm" class="dialog" style="display: none;">
-        <h4 class="title">提示</h4>
-        <div class="content">您的手机号<span class="phone"></span><br>是领取优惠券的唯一凭证，请确认!</div>
+        <span class="phone"></span>
         <div class="footer">
-            <button ontouchend="sendConfirm.sendInfo()" class="confirm">确认</button>
-            <button ontouchend="sendConfirm.hide()" class="cancel">重填</button>
+            <button ontouchend="sendConfirm.sendInfo()" class="confirm"></button>
+            <button ontouchend="sendConfirm.hide()" class="reset"></button>
         </div>
     </div>
 </script>
